@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/browse_flavor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ellen.joshua.craftbeerguru.BrowseTasteFragment">
+
+    <TextView
+        android:text="Choose Your Taste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_header"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="SELECT ANY THAT APPLY..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sub_header"
+        android:fontFamily="casual"
+        android:layout_below="@+id/tv_header"
+        android:layout_alignStart="@+id/tv_header" />
+
+    <TextView
+        android:text="Hops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hops_header"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/tv_sub_header"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Malt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_malt_header"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_alignBottom="@+id/tv_hops_header"
+        android:layout_toStartOf="@+id/tv_sub_header" />
+
+    <TextView
+        android:text="Yeast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_yeast_header"
+        android:textSize="18sp"
+        android:layout_above="@+id/cb_biscuity"
+        android:layout_toEndOf="@+id/tv_header" />
+
+    <CheckBox
+        android:text="Bready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_bready"
+        android:layout_below="@+id/cb_biscuity"
+        android:layout_alignStart="@+id/cb_biscuity"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Caramel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_caramel"
+        android:layout_below="@+id/cb_bready"
+        android:layout_alignStart="@+id/cb_bready"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Peat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_peat"
+        android:layout_below="@+id/cb_coffee"
+        android:layout_alignStart="@+id/cb_coffee"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Tropical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_tropical"
+        android:layout_below="@+id/cb_resiny"
+        android:layout_alignStart="@+id/cb_resiny"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Herbal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_herbal"
+        android:layout_below="@+id/cb_tropical"
+        android:layout_alignStart="@+id/cb_tropical"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Floral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_floral"
+        android:layout_below="@+id/cb_herbal"
+        android:layout_alignStart="@+id/cb_herbal"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Spicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_spicy"
+        android:layout_alignStart="@+id/cb_floral"
+        android:layout_below="@+id/cb_floral"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Dried Fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_dried_fruit"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignBaseline="@+id/cb_resiny"
+        android:layout_alignBottom="@+id/cb_resiny"
+        android:layout_alignParentEnd="true"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Banana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_banana"
+        android:layout_below="@+id/cb_dried_fruit"
+        android:layout_alignStart="@+id/cb_dried_fruit"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Clove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_clove"
+        android:layout_below="@+id/cb_banana"
+        android:layout_alignStart="@+id/cb_banana"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Peppery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_peppery"
+        android:layout_below="@+id/cb_clove"
+        android:layout_alignStart="@+id/cb_clove"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Biscuity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_biscuity"
+        android:layout_below="@+id/tv_malt_header"
+        android:layout_marginTop="5dp"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Chocolatey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_chocolatey"
+        android:layout_below="@+id/cb_caramel"
+        android:layout_alignStart="@+id/cb_caramel"
+        android:layout_above="@+id/cb_spicy"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_coffee"
+        android:layout_below="@+id/cb_chocolatey"
+        android:layout_alignStart="@+id/cb_chocolatey"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Dank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_dank"
+        android:layout_below="@+id/cb_spicy"
+        android:layout_alignStart="@+id/cb_spicy"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Sour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_sour"
+        android:layout_below="@+id/cb_peppery"
+        android:layout_alignStart="@+id/cb_peppery"
+        android:onClick="onCheckBoxClicked" />
+
+    <CheckBox
+        android:text="Resiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_resiny"
+        android:layout_below="@+id/tv_malt_header"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCheckBoxClicked" />
+
+    <TextView
+        android:text="FEATURED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_featured"
+        android:layout_below="@+id/cb_dank"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignEnd="@+id/cb_tropical" />
+
+    <CheckBox
+        android:id="@+id/cb_additives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beers w/ additives"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_featured"
+        android:layout_toStartOf="@+id/cb_dank" />
+
+    <Switch
+        android:id="@+id/switch_only_my_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/cb_additives"
+        android:layout_alignBottom="@+id/cb_additives"
+        android:layout_alignEnd="@+id/tv_featured" />
+
+    <TextView
+        android:id="@+id/tv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch_only_my_state"
+        android:layout_alignBottom="@+id/switch_only_my_state"
+        android:layout_toEndOf="@+id/switch_only_my_state"
+        android:text="Only MI Beers"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/brewery_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cb_additives" />
+
+</RelativeLayout>

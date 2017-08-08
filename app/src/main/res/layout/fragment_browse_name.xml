@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/browse_brewery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="ellen.joshua.craftbeerguru.BrowseNameFragment">
+
+    <TextView
+        android:text="BROWSE BY:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_header"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:text="NAME"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/actv_brewery_name"
+        android:layout_below="@id/tv_header"
+        android:layout_alignStart="@+id/actv_state"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        android:id="@+id/ib_search_by_brewery_name"
+        android:layout_alignBottom="@+id/actv_brewery_name"
+        android:layout_toEndOf="@+id/actv_brewery_name" />
+
+    <TextView
+        android:text="OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_conjunction"
+        android:textSize="12sp"
+        android:layout_below="@+id/actv_brewery_name"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:text="STATE"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/actv_state"
+        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_conjunction"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        android:id="@+id/ib_search_by_state"
+        android:layout_alignBottom="@+id/actv_state"
+        android:layout_toEndOf="@+id/actv_state" />
+
+    <TextView
+        android:text="FEATURED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_featured"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/actv_state"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/cb_show_brewery_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show brewery information"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_featured"
+        android:layout_alignStart="@+id/actv_state" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/brewery_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cb_show_brewery_info" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_show_brewery_info"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic" />
+
+</RelativeLayout>
