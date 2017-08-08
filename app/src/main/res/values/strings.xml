@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Craft Beer Guru</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    // NAVIGATION MENU TITLES
+    <string name="nav_menu_title_discover">Discover</string>
+    <string name="nav_menu_title_account">Account</string>
+    <string name="nav_menu_title_shop">Shop</string>
+    <string name="nav_menu_title_social_media">Social Media</string>
+    <string name="nav_menu_title_upgrade">Upgrade</string>
+    <string name="nav_menu_title_settings">Settings</string>
+    // NAVIGATION MENU ITEMS
+    <string name="nav_menu_item_home">Home</string>
+    <string name="nav_menu_item_beer_facts">Beer Facts</string>
+    <string name="nav_menu_item_brewery_events">Brewery Events</string>
+    <string name="nav_menu_item_my_profile">My Profile</string>
+    <string name="nav_menu_item_messages">Messages</string>
+    <string name="nav_menu_item_friends">Friends</string>
+    <string name="nav_menu_item_favorites">Favorites</string>
+    <string name="nav_menu_item_upcoming_events">Upcoming Events</string>
+    <string name="nav_menu_item_check_ins">Check-Ins</string>
+    <string name="nav_menu_item_trophy_case">Trophy Case</string>
+    <string name="nav_menu_item_cbg_store">CBG Store</string>
+    <string name="nav_menu_item_share">Share</string>
+    <string name="nav_menu_item_subscribe">Subscribe</string>
+    <string name="nav_menu_item_upgrade_now">Upgrade Now</string>
+    <string name="nav_menu_item_my_settings">My Settings</string>
+</resources>

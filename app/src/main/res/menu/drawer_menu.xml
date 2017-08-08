@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nav_menu_title_discover">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_home" />
+            <item
+                android:id="@+id/nav_beer_facts"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_beer_facts" />
+            <item
+                android:id="@+id/nav_brewery_events"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_brewery_events" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_menu_title_account">
+        <menu>
+            <item
+                android:id="@+id/nav_my_profile"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_my_profile" />
+            <item
+                android:id="@+id/nav_my_messages"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_messages" />
+            <item
+                android:id="@+id/nav_my_friends"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_friends" />
+            <item
+                android:id="@+id/nav_my_favorites"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_favorites" />
+            <item
+                android:id="@+id/nav_my_upcoming_events"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_upcoming_events" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_menu_title_shop">
+        <menu>
+            <item
+                android:id="@+id/nav_cbg_store"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_cbg_store" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_menu_title_social_media">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_share" />
+            <item
+                android:id="@+id/nav_subscribe"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_menu_item_subscribe" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_menu_title_upgrade">
+        <menu>
+            <item
+                android:id="@+id/nav_upgrade_now"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_upgrade_now" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_menu_title_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_my_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_menu_item_my_settings" />
+        </menu>
+    </item>
+</menu>
